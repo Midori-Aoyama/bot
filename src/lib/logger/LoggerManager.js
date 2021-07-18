@@ -2,7 +2,7 @@
 
 module.exports = class LoggerManager {
     log() {
-
+        
     }
 
     warn() {

@@ -17,6 +17,9 @@ module.exports = class BotManager extends Client {
         super(process.env.TOKEN, {
 
         })
+
+        
+
         this.connect()
     }
 }
