@@ -1,0 +1,24 @@
+{
+  "name": "midori-aoyama",
+  "version": "0.0.1",
+  "description": "A bot to manage servers for Discord and with moderation focus to keep your server chats clean and out of breaking rules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Midori-Aoyama/bot.git"
+  },
+  "author": "NavyCake",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Midori-Aoyama/bot/issues"
+  },
+  "homepage": "https://github.com/Midori-Aoyama/bot#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "eris": "github:RabbitHouseCorp/eris#feature/interaction",
+    "fs": "0.0.1-security"
+  }
+}
