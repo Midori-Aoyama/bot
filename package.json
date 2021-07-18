@@ -2,7 +2,7 @@
   "name": "midori-aoyama",
   "version": "0.0.1",
   "description": "A bot to manage servers for Discord and with moderation focus to keep your server chats clean and out of breaking rules.",
-  "main": "index.js",
+  "main": "./src/bot/BotManager.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

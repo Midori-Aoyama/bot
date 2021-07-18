@@ -1,4 +1,5 @@
 const { Client } = require('eris');
+const LoadEvents = require('../lib/events/LoadEvents');
 
 /**
  * @name dotenv
@@ -12,14 +13,27 @@ require('dotenv').config()
  * @name Eris
  * @package https://github.com/RabbitHouseCorp/eris/tree/feature/interaction
  */
-module.exports = class BotManager extends Client {
+class BotManager extends Client {
     constructor() {
+        
         super(process.env.TOKEN, {
-
+            autoreconnect: true,
+            defaultImageFormat: 'png',
+            defaultImageSize: 2048,
+            restMode: true,
+            allowedMentions: {
+              everyone: false,
+              roles: false,
+              users: true,
+              repliedUser: true
+            },
+            intents: process.env.INTENTS
         })
 
-        
+        this.loadEvent = new LoadEvents().load(this)
 
-        this.connect()
+
     }
 }
+
+new BotManager().connect()
