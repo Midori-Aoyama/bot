@@ -22,7 +22,7 @@ module.exports = class PingCommand extends CommandBlock {
     }
 
     runCommand(ctx) {
-        ctx.channel.createMessage(`Poooong!`)
+        ctx.channel.createMessage(`${Date.now() - ctx.message.timestamp}ms`)
     }
 
 

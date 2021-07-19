@@ -19,6 +19,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "eris": "github:RabbitHouseCorp/eris#feature/interaction",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "hound": "^1.0.5"
   }
 }

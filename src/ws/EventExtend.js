@@ -10,11 +10,23 @@ module.exports = class EventExtend {
     
     }
 
+
+    /**
+     * @description If you're building something, then disable it so it doesn't cause big explosions.
+     */
+    get disable() {
+        return false
+    }
+
+    get name() {
+        return ''
+    }
+
     get eventName() {
         return ''
     }
 
-    receive(...args) {
-
-    }
+    on() {}
+    
+    receive() {}
 }

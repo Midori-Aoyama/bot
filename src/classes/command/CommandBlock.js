@@ -21,6 +21,10 @@ module.exports = class CommandBlock {
         return []
     }
 
-    runCommand(ctx, bot)
+    get category() {
+        return 'unknown'
+    }
 
+
+    runCommand(ctx, bot) {  }
 }

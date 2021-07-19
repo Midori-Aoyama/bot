@@ -1,4 +1,5 @@
 const { Client } = require('eris');
+const CommandLoad = require('../classes/command/CommandLoad');
 const LoadEvents = require('../lib/events/LoadEvents');
 
 /**
@@ -29,8 +30,9 @@ class BotManager extends Client {
             },
             intents: process.env.INTENTS
         })
-
+        
         this.loadEvent = new LoadEvents().load(this)
+        this.commandManager = new CommandLoad().load()
 
 
     }
